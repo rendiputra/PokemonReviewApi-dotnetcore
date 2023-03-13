@@ -47,7 +47,7 @@ namespace PokemonReviewApi.Controllers
                 return NotFound();
             }
 
-            var pokemon = _mapper.Map<List<PokemonDto>>(_pokemonRepository.GetPokemon(pokeId));
+            var pokemon = _mapper.Map<PokemonDto>(_pokemonRepository.GetPokemon(pokeId));
 
             if (!ModelState.IsValid)
             {
