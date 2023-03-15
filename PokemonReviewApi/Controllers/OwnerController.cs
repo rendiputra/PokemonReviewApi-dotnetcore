@@ -89,7 +89,7 @@ namespace PokemonReviewApi.Controllers
             }
 
             var owners = _ownerRepository.GetOwners()
-                .Where(c => c.LastName.Trim().ToUpper() + c.FirstName.Trim().ToUpper() == ownerCreate.FirstName.TrimEnd().ToUpper() + ownerCreate.LastName.TrimEnd().ToUpper())
+                .Where(c => c.LastName.Trim().ToUpper() + c.FirstName.Trim().ToUpper() == ownerCreate.FirstName.Trim().ToUpper() + ownerCreate.LastName.Trim().ToUpper())
                 .FirstOrDefault();
 
             if (owners != null)

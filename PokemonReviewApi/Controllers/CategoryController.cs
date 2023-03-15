@@ -81,7 +81,7 @@ namespace PokemonReviewApi.Controllers
             }
 
             var category = _categoryRepository.GetCategories()
-                .Where(c => c.Name.Trim().ToUpper() == categoryCreate.Name.TrimEnd().ToUpper())
+                .Where(c => c.Name.Trim().ToUpper() == categoryCreate.Name.Trim().ToUpper())
                 .FirstOrDefault();
 
             if (category != null)
