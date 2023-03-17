@@ -11,5 +11,6 @@ namespace PokemonReviewApi.Interfaces
         bool OwnerExists(int ownerId);
         bool CreateOwner(Owner owner);
         bool Save();
+        bool UpdateOwner(Owner owner);
     }
 }
