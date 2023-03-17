@@ -10,6 +10,6 @@ namespace PokemonReviewApi.Interfaces
         bool CategoriesExists(int id);
         bool CreateCategory(Category category);
         bool Save();
-
+        bool UpdateCategory(Category category);
     }
 }
