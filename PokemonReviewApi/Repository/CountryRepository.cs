@@ -60,5 +60,12 @@ namespace PokemonReviewApi.Repository
 
             return Save();
         }
+
+        public bool DeleteCountry(Country country)
+        {
+            _context.Remove(country);
+
+            return Save();
+        }
     }
 }
